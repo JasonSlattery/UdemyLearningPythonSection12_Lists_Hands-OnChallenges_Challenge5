@@ -1,0 +1,26 @@
+# Section 12_Lists_Hands-On Challenges_Challenge_5
+#
+# Challenge #5
+# Write a program that prompts the user for a long string containing multiple
+# words separated by whitespaces and prints back the same string with the words in backward order.
+# For example, say I type the string: My name is Andrei
+# Then the script should print out: Andrei is name My
+#
+#
+# Working towards a solution:
+# Create a variable that both prompts a user for a sentence and stores what the user types out.
+# Strings are immutable.  Convert the string over into a list with the split() method.
+# Then reverse the list’s elements by using [::-1].
+# Then convert the reversed list back into a string using join() method.
+#
+#
+# My solution:
+#
+#
+Sentence_1 = input('Type out a sentence with spaces between each word with no peri-od at the end:')
+L1 = Sentence_1.split(' ')
+L2 = L1[::-1]
+Sentence_2 = ' '.join(L2)
+print(Sentence_2)
+#
+# End.
